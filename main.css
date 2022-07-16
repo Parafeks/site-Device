@@ -307,9 +307,35 @@ main{
 }
 
 .detail-button {
+    position: relative;
     color: black;
-
+    padding-left: 43px;
 }
+
+.detail-button::before {
+    content: "";
+    display: block;
+    width: 220px;
+    height: 8px;
+    background-color: #f0c52e;
+
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    z-index: -1;
+}
+
+.detail-button:hover::before{
+   top: -10px;
+   height: 40px;
+}
+
+.detail-button:active {
+    color: #be9c22;
+}
+
+.detail-button{}
+
 .grid {
     display: grid;
     grid-template-columns: 80px 62px 125px;
@@ -493,3 +519,8 @@ main{
 .logo-html:active {
     opacity: 0.3;
 }
+
+
+
+/* _________________удалить___- */
+
