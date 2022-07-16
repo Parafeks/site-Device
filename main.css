@@ -52,7 +52,6 @@
 
 a, a:visited, a:hover, a:active a:focus{
     text-decoration: none;
-    color: black;
 
 }
 
@@ -71,6 +70,7 @@ h1, h2, h3, h4 {
     font-size: inherit;
 }
 
+html,
 body{
     height: 100%; /* прижимаем футер к низу*/
     line-height: 1;  /* межстрочный интервал */
@@ -80,14 +80,15 @@ body{
 }
 
 .wrapper{
-    min-height: 100%;  /*прижимаем футер к низу */
+    /* min-height: 100%;  прижимаем футер к низу */
     overflow: hidden;   /*скрыть все, что выходит за пределы */
-    display: flex;     /*прижимаем футер к низу */
-    flex-direction: column;     /*прижимаем футер к низу */
+    /* display: flex;     прижимаем футер к низу
+    flex-direction: column;     прижимаем футер к низу */
 }
 
+
 main{
-    flex: 1 1 auto;    /*прижимаем футер к низу*/
+    /* flex: 1 1 auto;    прижимаем футер к низу */
 }
 
 
@@ -102,7 +103,7 @@ main{
 
     position: relative;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .header-logo{
@@ -120,7 +121,7 @@ main{
     justify-content: space-between;
     flex-wrap: wrap;
 
-    border: 2px solid rgb(0, 34, 255);
+    /* border: 2px solid rgb(0, 34, 255); */
 }
 
 .header-bar_link{
@@ -169,16 +170,16 @@ main{
     font-family: "Open Sans";
     font-weight: 300;
     font-size: 15px;
+    line-height: 30px;
 }
 
-.qqq{
+.header-menu{
     min-width: 1040px;
     display: flex;
     padding-top: 50px;
     justify-content: flex-start;
 
     /* border: 2px solid rgb(255, 0, 195); */
-
 }
 
 .site-navigation{
@@ -208,6 +209,8 @@ main{
 
     opacity: 0;
     visibility: hidden;
+    z-index: 2    я-штвучЖ 2*
+;
     /* border: 2px solid rgb(255, 0, 166); */
 
 }
@@ -242,4 +245,251 @@ main{
     width: 20px;
     height: 20px;
     margin-left: 27px;
+
+    width: 100px;
+    opacity: 0.3;
+}
+
+
+
+/* -------------- MAIN  slider-------------- */
+
+.slider-conteiner{
+    position: relative;
+    margin-bottom: 105px;
+}
+
+.slider-one{
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+
+    position: relative;
+    margin-top: -110px;
+    z-index: 1;
+
+    border: 2px solid rgb(21, 0, 255);
+}
+
+.slider-one::before{
+    content: '01';
+    right: -15px;
+    top: -18px;
+    position: absolute;
+    
+
+    font-family: "Gilroy";
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 180px;
+    color: rgb(255, 255, 255);
+}
+
+.main-foto {
+    margin-left: 30px;
+    margin-right: 125px;
+}
+.description {
+}
+
+.description-title {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 47px;
+
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.description-info {
+    margin-bottom: 60px;
+
+}
+
+.detail-button {
+    color: black;
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: 80px 62px 125px;
+    grid-template-rows: 35px 15px;
+    grid-column-gap: 80px;
+    grid-row-gap: 18px;
+    margin-top: 50px;
+
+}
+
+.value {
+    font-family: "Gilroy";
+    font-weight: 300;
+    font-size: 36px;
+
+}
+.name {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 13px;
+
+    /* border: 1px solid rgb(255, 0, 0); */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------- FOOTER  -------------- */
+
+.footer {
+    /* max-width: 1440px; */
+    color: #fff;
+    background-color: #464646;
+}
+.conteiner-footer {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 67px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    /* border: 2px solid rgb(255, 0, 166); */
+}
+
+
+.footer-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 42px;
+}
+.f-logo-link:hover { 
+    opacity: 0.6;
+}
+
+.f-logo-link:active { 
+    opacity: 0.3;
+}
+
+.f-logo-img {
+}
+
+.f-menu {
+    display: flex;
+}
+
+.f-menu-link {
+    display: flex;
+    align-items: center;
+}
+
+.f-menu-link:not(:last-child){
+    margin-right: 43px;
+}
+
+.f-menu-link:hover >.f-menu-img{
+    opacity: .6;
+}
+.f-menu-link:hover >.f-menu-text{
+    opacity: 1;
+}
+
+.f-menu-link:active >.f-menu-img{
+    opacity: .3;
+}
+.f-menu-link:active >.f-menu-text{
+    opacity: .3;
+}
+
+.f-menu-img{
+}
+
+.f-menu-text {
+    margin-left: 12px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+
+.footer-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.adress {
+}
+
+.delivery-list {
+    display: flex;
+}
+
+.delivery-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.delivery-link {
+    color: #fff;
+}
+.delivery-link:hover {
+    opacity: 0.6;
+}
+.delivery-link:active {
+    opacity: 0.3;
+}
+
+
+.phone-number {
+}
+
+.footer-tree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-link{
+    opacity: 0.3;
+}
+.icon-link:hover {
+    opacity: 0.6;
+}
+.icon-link:active {
+    opacity: 0.1;
+}
+
+.icon-list {
+    display: flex;
+}
+
+
+.icon-item:not(:last-child) {
+    margin-right: 23px;
+}
+
+.icon-img {
+}
+.logo-html:hover {
+    opacity: 0.6;
+}
+.logo-html:active {
+    opacity: 0.3;
 }
