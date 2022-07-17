@@ -209,8 +209,7 @@ main{
 
     opacity: 0;
     visibility: hidden;
-    z-index: 2    я-штвучЖ 2*
-;
+    z-index: 2;
     /* border: 2px solid rgb(255, 0, 166); */
 
 }
@@ -259,38 +258,62 @@ main{
     margin-bottom: 105px;
 }
 
-.slider-one{
+.slider{
     max-width: 1040px;
     margin: 0 auto;
     display: flex;
+    align-items: center;
 
     position: relative;
     margin-top: -110px;
     z-index: 1;
 
-    border: 2px solid rgb(21, 0, 255);
+    /* border: 2px solid rgb(21, 0, 255); */
 }
 
-.slider-one::before{
-    content: '01';
-    right: -15px;
-    top: -18px;
-    position: absolute;
-    
-
+.slider::before{
     font-family: "Gilroy";
     text-transform: uppercase;
     font-weight: 800;
     font-size: 180px;
     color: rgb(255, 255, 255);
+    position: absolute;
+    right: -15px;
+    top: -18px;
+    z-index: -1;
 }
 
-.main-foto {
+.slider:nth-child(1)::before{
+    content: '01';    
+}
+.slider:nth-child(2)::before{
+    content: '02';
+}
+.slider:nth-child(3)::before{
+    content: '03';
+}
+
+.main-foto:nth-child(1){ /* сделать для каждой картинки свои отступы? */
     margin-left: 30px;
     margin-right: 125px;
 }
-.description {
+.main-foto:nth-child(2){  /* не работает почему-то */
+    margin-left: 30px;
+    margin-right: 160px;
 }
+
+/* временные стили */
+.one{   
+    display: none;
+}
+.two{
+    display: none;
+}
+.tree{
+    /* display: none; */
+}
+/* конец временных стилей */
+
 
 .description-title {
     font-family: "Gilroy";
@@ -334,14 +357,12 @@ main{
     color: #be9c22;
 }
 
-.detail-button{}
 
-.grid {
-    display: grid;
-    grid-template-columns: 80px 62px 125px;
-    grid-template-rows: 35px 15px;
-    grid-column-gap: 80px;
-    grid-row-gap: 18px;
+
+.table{
+    width: fit-content;  /* размер ячейки + ее контенту */
+    width: 100%;  /*то ширина таблицы будет равна ширине блока-контейнера, в котором она находится. */
+    text-align: left;
     margin-top: 50px;
 
 }
@@ -356,10 +377,15 @@ main{
     font-family: "Open Sans";
     font-weight: 300;
     font-size: 13px;
+    padding-top: 20px;
+} 
 
-    /* border: 1px solid rgb(255, 0, 0); */
-
+/* th{
+    border: .5px solid rgb(21, 0, 255);
 }
+td{
+    border: .5px solid rgb(21, 0, 255);
+} */
 
 
 
