@@ -293,13 +293,26 @@ main{
     content: '03';
 }
 
-.main-foto:nth-child(1){ /* сделать для каждой картинки свои отступы? */
+/* .main-foto:nth-child(1){ сделать для каждой картинки свои отступы?
     margin-left: 30px;
     margin-right: 125px;
 }
-.main-foto:nth-child(2){  /* не работает почему-то */
+.main-foto:nth-child(2){ 
     margin-left: 30px;
     margin-right: 160px;
+} */
+
+.foto-size-one{
+    margin-left: 30px;
+    margin-right: 125px;
+}
+.foto-size-two{
+    margin-left: 30px;
+    margin-right: 154px;
+}
+.foto-size-tree{
+    margin-left: -35px;
+    margin-right: 46px;
 }
 
 /* временные стили */
