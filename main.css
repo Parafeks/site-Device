@@ -52,6 +52,7 @@
 
 a, a:visited, a:hover, a:active a:focus{
     text-decoration: none;
+    color: black;
 
 }
 
@@ -79,16 +80,8 @@ body{
     font-family: 'Open Sans';  /* ? */ 
 }
 
-.wrapper{
-    /* min-height: 100%;  прижимаем футер к низу */
-    overflow: hidden;   /*скрыть все, что выходит за пределы */
-    /* display: flex;     прижимаем футер к низу
-    flex-direction: column;     прижимаем футер к низу */
-}
-
 
 main{
-    /* flex: 1 1 auto;    прижимаем футер к низу */
 }
 
 
@@ -164,6 +157,15 @@ main{
     font-weight: 800;
     font-size: 18px;
     letter-spacing: .2em;
+    /* color: black; */
+}
+
+.Gilroy-extrabold24{
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
 }
 
 .OpenSans-light{
@@ -293,15 +295,6 @@ main{
     content: '03';
 }
 
-/* .main-foto:nth-child(1){ сделать для каждой картинки свои отступы?
-    margin-left: 30px;
-    margin-right: 125px;
-}
-.main-foto:nth-child(2){ 
-    margin-left: 30px;
-    margin-right: 160px;
-} */
-
 .foto-size-one{
     margin-left: 30px;
     margin-right: 125px;
@@ -317,13 +310,13 @@ main{
 
 /* временные стили */
 .one{   
-    display: none;
+    /* display: none; */
 }
 .two{
     display: none;
 }
 .tree{
-    /* display: none; */
+    display: none;
 }
 /* конец временных стилей */
 
@@ -364,6 +357,7 @@ main{
 .detail-button:hover::before{
    top: -10px;
    height: 40px;
+   transition:all .3s linear;
 }
 
 .detail-button:active {
@@ -377,7 +371,6 @@ main{
     width: 100%;  /*то ширина таблицы будет равна ширине блока-контейнера, в котором она находится. */
     text-align: left;
     margin-top: 50px;
-
 }
 
 .value {
@@ -393,14 +386,220 @@ main{
     padding-top: 20px;
 } 
 
-/* th{
-    border: .5px solid rgb(21, 0, 255);
+
+/* кнопки управления слайдером */
+
+
+
+.radio{
+    display: flex;
 }
-td{
-    border: .5px solid rgb(21, 0, 255);
-} */
+
+.radio-input{
+    display: none;
+}    
+
+.radio-btn {
+    position: relative;
+}
+
+.radio-lable::before{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1.5px solid black;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.radio-lable::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1.5px solid black;
+
+    position: absolute;
+    top: 3.7px;
+    left: 3.3px;
+    z-index: 1;
+}
+
+/* конец / кнопки управления слайдером  */
 
 
+ /* Блок с гаджетами (Начало) */
+
+.gadget{
+    max-width: 1160px;
+    margin: 0 auto;
+
+    /* border: 2px solid rgb(21, 0, 255); */
+}
+.gadget-list {
+    display: flex;
+    justify-content: space-between;
+
+}
+.gadget-item {
+}
+
+.gadget-link {
+    height: 160px;
+}
+
+
+
+.gadget-wrap {
+    width: 160px;
+    height: 160px;
+    background-color: #f7e296;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.gadget-link:hover .gadget-wrap{
+    background-color: #f0c52e;
+}
+
+.gadget-link:active .gadget-img {
+    opacity: 30%;
+}
+.gadget-link:active .gadget-text {
+    opacity: 30%;
+}
+   
+.size{
+    align-self: flex-end;  /*устанавливает выравнивание отдельно взятого флекс-элемента внутри контейнера по высоте */
+}
+
+.gadget-text {
+    max-width: 160px;
+
+    margin-bottom: 90px;  
+    /* border: 2px solid rgb(0, 255, 136); */
+}
+
+/* Блок с гаджетами (Конец) */
+
+
+
+/* Слайдер с услугами (Начало) */
+
+.services {
+    background-color: #e5e5e5;
+    margin-top: 100px;
+    margin-bottom:95px;
+    padding-bottom:68px;
+
+    /* position: relative;
+    z-index: -1; */
+    
+}
+
+.services-wrap {
+    width:1200px;
+    margin:0 auto;
+    padding:0 20px;
+
+    display: flex;
+    position: relative;
+   
+    /* border: 2px solid rgb(0, 255, 136); */
+
+
+}
+
+.services-btn-block {
+    display: flex;       
+    flex-direction: column;
+    position: relative;
+    top: -8px;
+}
+
+.services-btn-block::after{
+    content: "";
+    width: 7px;
+    height: 319px;
+    background-color: black;
+    position: absolute;
+    top: -80px;
+    left: 276px;
+}
+
+.services-btn {
+    display: block;
+    min-width: 160px;
+
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+.services-btn::before{
+    content: "";
+    width: 160px;
+    height: 8px;
+    background-color: #f0c52e;
+    
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: -1;
+}
+
+.services-btn:hover::before{
+    top: -10px;
+    height: 40px;
+    transition:all .1s linear;
+}
+
+.services-btn:active::before{
+    background-color: black;
+    width: 278px;
+    transition:all .05s linear;
+
+}
+
+.services-btn:active{
+    color: #f0c52e;
+}
+
+
+
+
+
+.services-menu {
+    position: relative;
+    top: -26px;
+    left: 200px;
+}
+
+.services-menu:after {
+    content: "";
+    background: url(images/delivery.png) no-repeat;
+    width: 100px;
+}
+
+.services-title {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 47px;
+    padding-bottom: 40px;
+    letter-spacing: .1em;
+}
+
+.services-text {
+
+}
 
 
 
@@ -558,8 +757,4 @@ td{
 .logo-html:active {
     opacity: 0.3;
 }
-
-
-
-/* _________________удалить___- */
 
