@@ -13,17 +13,20 @@
     <div class="wrapper">
         <header class="header">
             <div class="container-header">
-
                 <div class="header-logo">
                     <a href="#" class="header-logo_link">
                         <img src="images/logo.png" alt="Device Logo" class="header-logo_img">
                     </a>
                 </div>
+
                 <div class="header-bar">
-                    <form class="search">
-                        <input type="search" class="search-input" placeholder="Поиск по сайту">
+                    <form class="search" action="https://echo.htmlacademy.ru">
+                        <label for="search-id" class="search-label"></label>
+                        <input type="search" id="search-id" class="search-input OpenSans-light" placeholder="Поиск по сайту">
                         <button class="search__button" type="submit">Найти</button>
                     </form>
+                    
+
                     <!-- <div class="header-bar_center"> -->
                         <a href="#" class="header-bar_link-input OpenSans-light">
                             <img src="images/user.png" alt="Войти в аккаунт" class="header-bar_img">
@@ -45,27 +48,32 @@
 
                     <div class="header-menu">
                         <div class="site-navigation-item">
-                            <a href="#" class="site-navigation-link menu Gilroy-extrabold">Каталог товаров</a>
-                            <ul id="popup" class="submenu OpenSans-light">
-                                <li>
-                                    <ul class="submenu-column">
-                                        <li class="submenu-item"><a href="#" class="submenu-link">Виртуальная реальность</a></li>
-                                        <li class="submenu-item"><a href="#" class="submenu-link">Моноподы для селфи</a></li>
-                                        <li class="submenu-item"><a href="#" class="submenu-link">Экшн-камеры</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="submenu-column">
-                                        <li class="submenu-item"><a href="#" class="submenu-link">Фитнес-браслеты</a></li>
-                                        <li class="submenu-item"><a href="#" class="submenu-link">Умные часы</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="submenu-column">
-                                        <li class="submenu-item"><a href="#" class="submenu-link">Квадрокоптеры</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+
+
+                            <a href="#" class="catalog-link Gilroy-extrabold">Каталог товаров</a>
+                            
+                            <div class="menu">
+                                <ul id="popup" class="submenu OpenSans-light">
+                                    <li>
+                                        <ul class="submenu-column">
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Виртуальная реальность</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Моноподы для селфи</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Экшн-камеры</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="submenu-column">
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Фитнес-браслеты</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Умные часы</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="submenu-column">
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Квадрокоптеры</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <ul class="site-navigation">
                             <li class="site-navigation-item"><a href="#" class="site-navigation-link Gilroy-extrabold">Доставка</a></li>
