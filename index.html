@@ -19,69 +19,64 @@
                     </a>
                 </div>
 
-                <div class="header-bar">
-                    <form class="search" action="https://echo.htmlacademy.ru">
-                        <label for="search-id" class="search-label"></label>
-                        <input type="search" id="search-id" class="search-input OpenSans-light" placeholder="Поиск по сайту">
-                        <button class="search__button" type="submit">Найти</button>
-                    </form>
-                    
-
-                    <!-- <div class="header-bar_center"> -->
-                        <a href="#" class="header-bar_link-input OpenSans-light">
-                            <img src="images/user.png" alt="Войти в аккаунт" class="header-bar_img">
-                            <p class="header-bar_text">Войти</p>
+                <div class="header-container"> 
+                    <a href="#" class="header-logo_link"><img src="images/logo.png" alt="Device Logo" class="header-logo_img"></a>
+    
+                    <div class="user-menu">
+                        
+                        <form class="search" action="#">
+                            <label for="search-id" class="search-label"></label>
+                            <input type="search" id="search-id" class="search-input" placeholder="Поиск по сайту">
+                            <button class="search-button" type="submit">Найти</button>
+                        </form>
+    
+                        <a href="#" class="user-account">
+                            <img src="images/user.png" alt="User icon">
+                            <p class="user-text">Валентин Петухов</p>
                         </a>
-                    <!-- </div> -->
-                    <div class="header-bar-left">
-                        <a href="#" class="header-bar_link OpenSans-light">
-                            <img src="images/compare.png" alt="Сравнить" class="header-bar_img">
-                            <p class="header-bar_text">Сравнить</p>
-                        </a>
-                        <a href="#" class="header-bar_link OpenSans-light">
-                            <img src="images/cart.png" alt="Корзина" class="header-bar_img">
-                            <p class="header-bar_text">Корзина</p>
-                        </a>
-                    </div>
-
-
-
-                    <div class="header-menu">
-                        <div class="site-navigation-item">
-
-
-                            <a href="#" class="catalog-link Gilroy-extrabold">Каталог товаров</a>
-                            
-                            <div class="menu">
-                                <ul id="popup" class="submenu OpenSans-light">
-                                    <li>
-                                        <ul class="submenu-column">
-                                            <li class="submenu-item"><a href="#" class="submenu-link">Виртуальная реальность</a></li>
-                                            <li class="submenu-item"><a href="#" class="submenu-link">Моноподы для селфи</a></li>
-                                            <li class="submenu-item"><a href="#" class="submenu-link">Экшн-камеры</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul class="submenu-column">
-                                            <li class="submenu-item"><a href="#" class="submenu-link">Фитнес-браслеты</a></li>
-                                            <li class="submenu-item"><a href="#" class="submenu-link">Умные часы</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul class="submenu-column">
-                                            <li class="submenu-item"><a href="#" class="submenu-link">Квадрокоптеры</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <ul class="site-navigation">
-                            <li class="site-navigation-item"><a href="#" class="site-navigation-link Gilroy-extrabold">Доставка</a></li>
-                            <li class="site-navigation-item"><a href="#" class="site-navigation-link Gilroy-extrabold">Гарантия</a></li>
-                            <li class="site-navigation-item"><a href="#" class="site-navigation-link Gilroy-extrabold">Контакты</a></li>
+    
+                        <ul class="user-list">
+                            <li class="user-item">
+                                <a href="#" class="user-link">
+                                    <img src="images/compare.png" alt="Icon">
+                                    <p class="user-text">Сравнить</p>
+                                </a>
+                            </li>
+                            <li class="user-item">
+                                <a href="#" class="user-link">
+                                    <img src="images/cart.svg" alt="Icon cart">
+                                    <p class="user-text">Корзина</p>
+                                </a></li>
                         </ul>
+                    </div>  
+    
+                    <div class="navigation">
+                        <a href="#" class="catalog-link">Каталог товаров</a>
+                        <div class="catalog-menu">
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="#" class="submenu-link">Виртуальная реальность</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">Моноподы для селфи</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">Экшн-камеры</a></li>
+    
+                                <li class="submenu-item"><a href="#" class="submenu-link">Фитнес-браслеты</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">Умные часы</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link"></a>=_=</li>
+    
+                                <li class="submenu-item"><a href="#" class="submenu-link">Квадрокоптеры</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link"></a>=_=</li>
+                                <li class="submenu-item"><a href="#" class="submenu-link"></a>=_=</li>
+                            </ul>
+                        </div>
+                        
+                        <ul class="navigation-list">
+                            <li class="nav-link"><a href="#" class="nav-link">Доставка</a></li>
+                            <li class="nav-link"><a href="#" class="nav-link">Гарантия</a></li>
+                        </ul>
+    
+                        <a href="#" class="navigation-contacts">Контакты</a>
+                
                     </div>
-                </div>
+                </div>   
             </div>
         </div>
 
@@ -357,6 +352,39 @@
             </div> 
         </div>
     </div>
+
+    <div id="popup-id" class="popup">
+        <div class="popup-body">
+            <div class="popup-content"> 
+                <a href="#" class="popup-close"> <img src="images/modal-close.svg" alt="Закрыть модальное окно"></a>
+                <form action="#" method="get" class="data-form">
+                    <div class="name-form">
+                        <p>Ваше имя:</p>
+                        <input type="text" class="name-input" id="name-id" value="" name="username" placeholder="Имя Фамилия">
+                        <!-- <label for="name-id" class="name-label"></label> -->
+                    </div>
+
+                    <div class="email-form">
+                        <p>Ваш e-mail:</p>
+                        <input type="email" class="email-input" id="email-id" value="" name="user-email" placeholder="email@example.com">
+                        <!-- <label for="email-id" class="email-label"></label> -->
+                    </div>
+                </form>
+
+                <form action="#" method="get" class="text-form">
+                    <p>Текст письма:</p>
+                    <textarea class="textarea-text" name="" id="text-id" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                    <!-- <label for="text-id" class="text-label"></label> -->
+                    <button class="text-btn">Отправить</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    
+
 </body>
 </html>
 <!--  -->
